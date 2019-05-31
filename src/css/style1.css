@@ -1,0 +1,177 @@
+
+
+
+body {
+    /*background-image:url("../img/bg.jpg");*/
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding: 0px;
+    /*background-image: linear-gradient(to top, rgb(160, 190, 160), rgb(137, 228, 223));*/
+  
+}
+#logo{
+    width:300px;
+    border: 2px solid lightgreen;
+    background-color: lightseagreen;
+    margin-top:50x;
+    margin-left:50px;
+    padding: 30px;
+    border-radius:15px;
+}
+
+/* Style the header 
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+*/
+.allmenu{
+    list-style: none;
+    float: right;
+    margin-top: -70px;
+}
+.eachitem{
+    display: inline;
+    color:darkorange;
+    font-size: 130%;
+    font-style: inherit;
+    font: 'candara';
+    margin-right:25px;
+    cursor: pointer;
+}
+
+.message{
+font-size: 100%;
+position:absolute;
+top: 25%;
+width:100%;
+
+color: black;
+
+}
+.msg{
+    color: lightgreen;
+}
+
+#footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    position: inherit;
+    margin-top: 515px;
+  }
+  button{
+      font-size: 100%;
+      background-color: khaki;
+      border: 1px solid lightcoral;
+      border-radius: 10px;
+      padding:10px;
+      margin: 10px 10px 10px 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+  }
+  .eachitem:hover
+  {
+    color:black;
+    border-bottom: 8px solid light grey;
+    transition: all 0.3s ease-in-out;
+  }
+  button:hover{
+    color:black;
+    border-bottom: 5px solid grey;
+    transition: all 0.3s ease-in-out;
+    background-color: darkorange;
+    font-size:13px;
+
+}
+.vdbg{
+    position:fixed;
+    min-width:100%;
+   min-height: 100%; 
+   z-index: -100;
+}
+  
+.videosDiv{
+  font-size: 100%;
+    position: absolute;
+    top: 1%;
+    left: 250%;
+    color: black;
+    width: 100%;
+}
+.formDiv{
+  font-size: 100%;
+  position: relative;
+
+  
+  color: black;
+ 
+}
+
+.left{
+ 
+  width:40%;
+  float:left;
+  left:3%;
+  top: 5%;
+  position: absolute;
+}
+
+.right{
+ 
+  width:46%;
+  right:2%;
+  float:right;
+  
+  position: absolute;
+}

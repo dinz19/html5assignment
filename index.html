@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="src/css/style1.css">
+    <title>Cognizant Assignment</title>
+</head>
+
+<body>
+
+
+    <header>
+        <!--  <video clas="vdbg" autoplay loop>
+                  <source src="video/star.mp4"/>
+          </video>-->
+        <div id="logo">
+            <img src="src/img/cts1.png" alt="Cognizant" width="300px" />
+        </div>
+
+        <div id="menu" style="position: relative;
+        float: right;
+        right: 50%; margin-top:-75px; margin-left:190px;
+        ">
+           <h1> Cognizant Assignment</h1>
+        </div>
+
+    </header>
+
+    <div class="message">
+
+        <div class="left">
+            <div class="formDiv">
+                <form  onsubmit="return ValidateForm()" method="POST">
+                        
+                            First Name:  &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input type="text" id='na1' name="firstname" required> <br>
+                            <span id='na1.err'> </span> <br>
+                       
+                                Phone Number: &nbsp;
+                                <input type="number" id='na2' name="phoneno" required> <br> 
+                                <span id='na2.err'> </span> <br>
+                     
+                            PinCode:  &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="number" id='na3' name="pin" required> <br> 
+                            <span id='na3.err'> </span> <br>
+                        
+                            Email Id:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input type="email" id='na4' name="emaiId" required> <br> 
+                            <span id='na4.err'> </span> <br>
+
+                            Email Freq:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                            <input type="number" id='na5' min="2" max="8" step="2" name="emailfreq" onblur="getCoupons()"> <br> 
+                            <span id='na5.err'> </span> <br>
+
+                            Pref Categ:  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <input list="pref" id='na6' required >
+                                <datalist id="pref">
+                                    <option value="Kids">
+                                    <option value="Electronics">
+                                    <option value="Appliances">
+                                    <option value="Adult">
+                                    <option value="Zoom">
+                                </datalist> 
+                            <span id='na6.err'> </span> <br>
+                        
+                           <br> <span id="coupons">Total coupons : </span><br><br>
+
+
+                        <input type="Submit" value="Submit"> <br>
+
+                        
+                    </form>
+                    </div>
+        </div>
+        <div class="right">
+                <video id="vid" width="420" height="315" autoplay controls loop>
+                        <source src="src/video/mov_bbb.mp4" />
+    
+                    </video>
+        </div>
+       
+        </div>
+    </div>
+
+    <div id="footer">
+        Thank you
+    </div>
+
+
+
+</body>
+
+<script>
+function getCoupons()
+        {
+            
+            var a = document.getElementById("na5").value;
+            a = a * 3 *2 ;
+            document.getElementById("coupons").innerText = a
+           
+            
+        }
+</script>
+</html>
